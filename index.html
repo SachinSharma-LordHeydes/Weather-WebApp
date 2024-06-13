@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/f070526115.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-slate-500">
+    
+    <div class="w-100vw h-100vh">
+
+        <!-- heading -->
+        <div>
+            <h1 class="mt-10 text-center text-3xl font-bold">
+                WEATHER APP
+            </h1>
+        </div>
+
+
+        <!-- switch tab -->
+        <div class=" mt-5 text-lg flex justify-around">
+            <button class="text-sm p-1 font-bold pl-3 pr-3 rounded-full bg-slate-400  m-2 hover:bg-slate-300 yourWeatherBtn">Your Weather</button>
+            <button class="text-sm p-1 font-bold pl-3 pr-3  rounded-full bg-slate-400 m-2 hover:bg-slate-300 searchWeatherBtn">Search Weather</button>
+        </div>
+
+
+        <!-- grant location access -->
+
+        <div class=" text-center items-center flex justify-center flex-col getPermissionTab">
+            <div class="">
+                <img class="m-5 size-20" src="images.png" alt="">
+            </div>
+            <div>
+               <div>
+                    <h2 class="font-bold text-lg">
+                        Grant Location Access
+                    </h2>
+               </div>
+               <div>
+                    <p class="text-sm">
+                        Allow Access To Grant Location
+                    </p>
+               </div>
+
+               <div>
+                    <button class="rounded-full bg-slate-400 p-1 pl-2 pr-2 m-2 hover:bg-slate-300 getPermissionBtn">
+                        Grant Access
+                    </button>
+               </div>
+
+            </div>
+        </div>
+
+
+        <!-- Your Weather Tab -->
+        <div class="w-full flex items-center text-center justify-center yourWeatherTab Info">
+
+            <div class="flex justify-center flex-col">
+
+                <div class="m-3 flex flex-col justify-center">
+                    <div class=" flex justify-center">
+                        <div class=" text-xl countryName">Country Name</div>
+                        <span>
+                            <img class="ml-1 size-8 countryFlag" src="" alt="">
+                        </span>
+                    </div>
+    
+                    <div class="items-center weatherDescp">WeatherDescription</div>
+                    <div class="flex justify-center">
+                        <img class="size-20 weatherImage" src="" alt="">
+                    </div>
+                    <div class="font-bold flex justify-center">
+                        <div class="text-3xl temprature"></div>
+                        <span class="text-3xl ml-3">°C</span>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <div class=" flex">
+                    <!-- Card1 -->
+                    <div class="px-9 pb-5 bg-slate-400 ml-5 mr-5">
+                        <div class="flex justify-center">
+                            <img class="size-20" src="wind-removebg-preview.png" alt="">
+                        </div>
+                        <div>WINDSPEED</div>
+                        <div class="flex justify-center ">
+                            <div class="windSpeed"></div>
+                            <div>  m/s</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card2 -->
+                    <div class="px-10 pb-5 ml-5 mr-5 bg-slate-400">
+                        <div class="flex justify-center">
+                            <img class="size-20 p-3" src="humidity.png" alt="">
+                        </div>
+                        <div>HUIMIDITY</div>
+                        <div class="flex justify-center">
+                            <div class="humidity"></div>
+                            <div>%</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card3 -->
+                    <div class="px-9 pb-5 ml-5 mr-5 bg-slate-400">
+                        <div class="flex justify-center">
+                            <img class="size-20" src="cloud.png" alt="">
+                        </div>
+                        <div>CLOUD</div>
+                        <div class="flex justify-center w">
+                            <div class="clouds"></div>
+                            <div>%</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SearchTab -->
+        <div class="mt-5 flex justify-center searchWeatherTab Info">
+            <!-- <div class="weatherSearchBtn">searchDiv</div> -->
+            <input class="px-5 text-xl appearance-none border-t-2 border-b-2 border-l-2 border-black rounded-tl-full rounded-bl-full cityName" type="text">
+            <div class=" border-2 border-black rounded-tr-full rounded-br-full bg-white">
+                <button class=" px-5 searchCityBtn">
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i></button>
+            </div>
+        </div>
+
+        <!-- Loading Tab -->
+
+        <div class="flex w-full h-full justify-center loading">
+            <img class="size-20" src="loading.gif" alt="">
+        </div>
+
+        <!-- UnkownPlace -->
+        <div class="text-center flex flex-col error">
+            <div class="flex justify-center">
+                <img class="size-10" src="warning.webp" alt="">
+                <h1 class="flex justify-center text-2xl warning text-red-500 font-bold">Please Search for the Valid Cities</h1>
+            </div>
+           <div>
+            <button class="bg-slate-400 px-4 rounded-full okBtn">ok</button>
+           </div>
+        </div>
+
+
+    
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

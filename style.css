@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.yourWeatherBtn{
+
+}
+.searchWeatherBtn{
+
+}
+
+
+
+.getPermissionTab{
+    display: none;
+}
+.yourWeatherTab{
+    display: none;
+}
+.searchWeatherTab{
+    display: none;
+}
+
+.loading{
+    display: none;
+}
+
+.active{
+    display: flex;
+}
+
+.error{
+    display: none;
+}
+
+/* 
+let fetchRes = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${locationDetail?.latitude}&lon=${locationDetail?.longitude}&appid=396211a8b10fbf2101770a67dbff6226`);
+        
+    // FetchRes is the promise to resolve
+    // it by using.then() method
+    fetchRes.then(res =>
+        res.json()).then(d => {
+            console.log(d)
+        }); */
